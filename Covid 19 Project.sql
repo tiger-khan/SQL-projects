@@ -1,7 +1,10 @@
+-- Insights from the covid-19 data using two datasets
 
+-- selecting data
 select *from [My Portfolio]..CovidDeaths;
 select *from [My Portfolio]..CovidVaccinations;
 
+-- covid cases ordered by location and date
 select location, date, total_cases, new_cases, population
 from [My Portfolio]..CovidDeaths
 order by 1,2;
